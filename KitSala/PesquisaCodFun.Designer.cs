@@ -29,6 +29,7 @@ namespace KitSala
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PesquisaCodFun));
             this.textBoxChapaFun = new System.Windows.Forms.TextBox();
             this.textBoxEmailFun = new System.Windows.Forms.TextBox();
             this.textBoxNomeFun = new System.Windows.Forms.TextBox();
@@ -106,12 +107,15 @@ namespace KitSala
             // 
             // buttonPesquisar
             // 
+            this.buttonPesquisar.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPesquisar.ForeColor = System.Drawing.Color.Black;
             this.buttonPesquisar.Location = new System.Drawing.Point(224, 79);
             this.buttonPesquisar.Name = "buttonPesquisar";
             this.buttonPesquisar.Size = new System.Drawing.Size(75, 23);
             this.buttonPesquisar.TabIndex = 13;
             this.buttonPesquisar.Text = "Pesquisar";
-            this.buttonPesquisar.UseVisualStyleBackColor = true;
+            this.buttonPesquisar.UseVisualStyleBackColor = false;
             this.buttonPesquisar.Click += new System.EventHandler(this.buttonPesquisar_Click);
             // 
             // labelDigite
@@ -164,22 +168,26 @@ namespace KitSala
             // 
             // buttonExcluir
             // 
+            this.buttonExcluir.BackColor = System.Drawing.Color.LightCoral;
+            this.buttonExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExcluir.Location = new System.Drawing.Point(289, 204);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(65, 23);
             this.buttonExcluir.TabIndex = 16;
             this.buttonExcluir.Text = "Excluir";
-            this.buttonExcluir.UseVisualStyleBackColor = true;
+            this.buttonExcluir.UseVisualStyleBackColor = false;
             this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
             // 
             // buttonAlterar
             // 
+            this.buttonAlterar.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.buttonAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAlterar.Location = new System.Drawing.Point(208, 204);
             this.buttonAlterar.Name = "buttonAlterar";
             this.buttonAlterar.Size = new System.Drawing.Size(65, 23);
             this.buttonAlterar.TabIndex = 15;
             this.buttonAlterar.Text = "Alterar";
-            this.buttonAlterar.UseVisualStyleBackColor = true;
+            this.buttonAlterar.UseVisualStyleBackColor = false;
             this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
             // tabPage1
@@ -196,16 +204,19 @@ namespace KitSala
             // 
             // buttonPesqFun
             // 
+            this.buttonPesqFun.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonPesqFun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPesqFun.Location = new System.Drawing.Point(76, 44);
             this.buttonPesqFun.Name = "buttonPesqFun";
             this.buttonPesqFun.Size = new System.Drawing.Size(243, 35);
             this.buttonPesqFun.TabIndex = 1;
             this.buttonPesqFun.Text = "Pesquisar Todos os Funcionários";
-            this.buttonPesqFun.UseVisualStyleBackColor = true;
+            this.buttonPesqFun.UseVisualStyleBackColor = false;
             this.buttonPesqFun.Click += new System.EventHandler(this.buttonPesqFun_Click);
             // 
             // dataGridViewFun
             // 
+            this.dataGridViewFun.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridViewFun.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewFun.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Codigo,
@@ -245,6 +256,7 @@ namespace KitSala
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(134, 18);
             this.label1.Name = "label1";
@@ -256,13 +268,15 @@ namespace KitSala
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(453, 394);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
             this.Name = "PesquisaCodFun";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pesquisa por Código";
+            this.Text = "Pesquisa Funcionário";
             this.Load += new System.EventHandler(this.PesquisaCodFun_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);

@@ -29,6 +29,7 @@ namespace KitSala
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PesquisaKitSala));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridViewPesqKits = new System.Windows.Forms.DataGridView();
@@ -84,6 +85,7 @@ namespace KitSala
             // 
             // dataGridViewPesqKits
             // 
+            this.dataGridViewPesqKits.BackgroundColor = System.Drawing.Color.Black;
             this.dataGridViewPesqKits.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPesqKits.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codigo,
@@ -124,12 +126,14 @@ namespace KitSala
             // 
             // buttonPesKit
             // 
+            this.buttonPesKit.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonPesKit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPesKit.Location = new System.Drawing.Point(161, 60);
             this.buttonPesKit.Name = "buttonPesKit";
             this.buttonPesKit.Size = new System.Drawing.Size(214, 35);
             this.buttonPesKit.TabIndex = 0;
             this.buttonPesKit.Text = "Pesquisar Todos os Kits";
-            this.buttonPesKit.UseVisualStyleBackColor = true;
+            this.buttonPesKit.UseVisualStyleBackColor = false;
             this.buttonPesKit.Click += new System.EventHandler(this.buttonPesKit_Click);
             // 
             // tabPage2
@@ -158,22 +162,26 @@ namespace KitSala
             // 
             // buttonExcluirKit
             // 
+            this.buttonExcluirKit.BackColor = System.Drawing.Color.LightCoral;
+            this.buttonExcluirKit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExcluirKit.Location = new System.Drawing.Point(433, 217);
             this.buttonExcluirKit.Name = "buttonExcluirKit";
             this.buttonExcluirKit.Size = new System.Drawing.Size(75, 23);
             this.buttonExcluirKit.TabIndex = 36;
             this.buttonExcluirKit.Text = "Excluir";
-            this.buttonExcluirKit.UseVisualStyleBackColor = true;
+            this.buttonExcluirKit.UseVisualStyleBackColor = false;
             this.buttonExcluirKit.Click += new System.EventHandler(this.buttonExcluirKit_Click);
             // 
             // buttonAltKit
             // 
+            this.buttonAltKit.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.buttonAltKit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAltKit.Location = new System.Drawing.Point(433, 175);
             this.buttonAltKit.Name = "buttonAltKit";
             this.buttonAltKit.Size = new System.Drawing.Size(75, 23);
             this.buttonAltKit.TabIndex = 35;
             this.buttonAltKit.Text = "Alterar";
-            this.buttonAltKit.UseVisualStyleBackColor = true;
+            this.buttonAltKit.UseVisualStyleBackColor = false;
             this.buttonAltKit.Click += new System.EventHandler(this.buttonAltKit_Click);
             // 
             // textBoxPesquisaKit
@@ -224,12 +232,14 @@ namespace KitSala
             // 
             // buttonPesquisarKit
             // 
+            this.buttonPesquisarKit.BackColor = System.Drawing.Color.Moccasin;
+            this.buttonPesquisarKit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPesquisarKit.Location = new System.Drawing.Point(311, 62);
             this.buttonPesquisarKit.Name = "buttonPesquisarKit";
             this.buttonPesquisarKit.Size = new System.Drawing.Size(75, 23);
             this.buttonPesquisarKit.TabIndex = 33;
             this.buttonPesquisarKit.Text = "Pesquisar";
-            this.buttonPesquisarKit.UseVisualStyleBackColor = true;
+            this.buttonPesquisarKit.UseVisualStyleBackColor = false;
             this.buttonPesquisarKit.Click += new System.EventHandler(this.buttonPesquisarKit_Click);
             // 
             // checkBoxCha
@@ -291,10 +301,11 @@ namespace KitSala
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(224, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 21);
+            this.label1.Size = new System.Drawing.Size(180, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Pesquisa de Kit Sala";
             // 
@@ -302,12 +313,15 @@ namespace KitSala
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(591, 390);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
             this.Name = "PesquisaKitSala";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PesquisaKitSala";
+            this.Text = "Pesquisar Kit Sala";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesqKits)).EndInit();

@@ -29,6 +29,7 @@ namespace KitSala
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaKit));
             this.buttonSalvarKit = new System.Windows.Forms.Button();
             this.checkBoxPreto = new System.Windows.Forms.CheckBox();
             this.checkBoxAzul = new System.Windows.Forms.CheckBox();
@@ -44,73 +45,81 @@ namespace KitSala
             // 
             // buttonSalvarKit
             // 
-            this.buttonSalvarKit.Location = new System.Drawing.Point(162, 266);
+            this.buttonSalvarKit.BackColor = System.Drawing.Color.SpringGreen;
+            this.buttonSalvarKit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSalvarKit.Location = new System.Drawing.Point(179, 277);
             this.buttonSalvarKit.Name = "buttonSalvarKit";
             this.buttonSalvarKit.Size = new System.Drawing.Size(75, 23);
             this.buttonSalvarKit.TabIndex = 21;
             this.buttonSalvarKit.Text = "Salvar";
-            this.buttonSalvarKit.UseVisualStyleBackColor = true;
+            this.buttonSalvarKit.UseVisualStyleBackColor = false;
             this.buttonSalvarKit.Click += new System.EventHandler(this.buttonSalvarKit_Click);
             // 
             // checkBoxPreto
             // 
             this.checkBoxPreto.AutoSize = true;
+            this.checkBoxPreto.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.checkBoxPreto.Location = new System.Drawing.Point(244, 213);
             this.checkBoxPreto.Name = "checkBoxPreto";
             this.checkBoxPreto.Size = new System.Drawing.Size(138, 19);
             this.checkBoxPreto.TabIndex = 19;
             this.checkBoxPreto.Text = "Canetão Digital Preto";
-            this.checkBoxPreto.UseVisualStyleBackColor = true;
+            this.checkBoxPreto.UseVisualStyleBackColor = false;
             // 
             // checkBoxAzul
             // 
             this.checkBoxAzul.AutoSize = true;
+            this.checkBoxAzul.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.checkBoxAzul.Location = new System.Drawing.Point(244, 184);
             this.checkBoxAzul.Name = "checkBoxAzul";
             this.checkBoxAzul.Size = new System.Drawing.Size(133, 19);
             this.checkBoxAzul.TabIndex = 18;
             this.checkBoxAzul.Text = "Canetão Digital Azul";
-            this.checkBoxAzul.UseVisualStyleBackColor = true;
+            this.checkBoxAzul.UseVisualStyleBackColor = false;
             // 
             // checkBoxChave
             // 
             this.checkBoxChave.AutoSize = true;
+            this.checkBoxChave.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.checkBoxChave.Location = new System.Drawing.Point(244, 155);
             this.checkBoxChave.Name = "checkBoxChave";
             this.checkBoxChave.Size = new System.Drawing.Size(99, 19);
             this.checkBoxChave.TabIndex = 17;
             this.checkBoxChave.Text = "Chave da Sala";
-            this.checkBoxChave.UseVisualStyleBackColor = true;
+            this.checkBoxChave.UseVisualStyleBackColor = false;
             // 
             // checkBoxApagador
             // 
             this.checkBoxApagador.AutoSize = true;
+            this.checkBoxApagador.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.checkBoxApagador.Location = new System.Drawing.Point(33, 213);
             this.checkBoxApagador.Name = "checkBoxApagador";
             this.checkBoxApagador.Size = new System.Drawing.Size(165, 19);
             this.checkBoxApagador.TabIndex = 16;
             this.checkBoxApagador.Text = "Apagador da Lousa Digital";
-            this.checkBoxApagador.UseVisualStyleBackColor = true;
+            this.checkBoxApagador.UseVisualStyleBackColor = false;
             // 
             // checkBoxConData
             // 
             this.checkBoxConData.AutoSize = true;
+            this.checkBoxConData.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.checkBoxConData.Location = new System.Drawing.Point(34, 184);
             this.checkBoxConData.Name = "checkBoxConData";
             this.checkBoxConData.Size = new System.Drawing.Size(145, 19);
             this.checkBoxConData.TabIndex = 15;
             this.checkBoxConData.Text = "Controle do DataShow";
-            this.checkBoxConData.UseVisualStyleBackColor = true;
+            this.checkBoxConData.UseVisualStyleBackColor = false;
             // 
             // checkBoxConAr
             // 
             this.checkBoxConAr.AutoSize = true;
+            this.checkBoxConAr.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.checkBoxConAr.Location = new System.Drawing.Point(33, 155);
             this.checkBoxConAr.Name = "checkBoxConAr";
             this.checkBoxConAr.Size = new System.Drawing.Size(182, 19);
             this.checkBoxConAr.TabIndex = 14;
             this.checkBoxConAr.Text = "Controle do Ar Condicionado";
-            this.checkBoxConAr.UseVisualStyleBackColor = true;
+            this.checkBoxConAr.UseVisualStyleBackColor = false;
             // 
             // tbKitSala
             // 
@@ -122,15 +131,17 @@ namespace KitSala
             // labelTituloSalas
             // 
             this.labelTituloSalas.AutoSize = true;
-            this.labelTituloSalas.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelTituloSalas.BackColor = System.Drawing.Color.Transparent;
+            this.labelTituloSalas.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelTituloSalas.Location = new System.Drawing.Point(138, 34);
             this.labelTituloSalas.Name = "labelTituloSalas";
-            this.labelTituloSalas.Size = new System.Drawing.Size(138, 21);
+            this.labelTituloSalas.Size = new System.Drawing.Size(162, 25);
             this.labelTituloSalas.TabIndex = 12;
             this.labelTituloSalas.Text = "Cadastro de Salas";
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Location = new System.Drawing.Point(17, 128);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(382, 120);
@@ -141,6 +152,7 @@ namespace KitSala
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(131, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 15);
@@ -151,6 +163,8 @@ namespace KitSala
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(418, 324);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonSalvarKit);

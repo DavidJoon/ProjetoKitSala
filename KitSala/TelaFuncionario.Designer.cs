@@ -29,6 +29,7 @@ namespace KitSala
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaFuncionario));
             this.labelTituloFun = new System.Windows.Forms.Label();
             this.labelNome = new System.Windows.Forms.Label();
             this.labelEmail = new System.Windows.Forms.Label();
@@ -42,16 +43,18 @@ namespace KitSala
             // labelTituloFun
             // 
             this.labelTituloFun.AutoSize = true;
-            this.labelTituloFun.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelTituloFun.Location = new System.Drawing.Point(136, 53);
+            this.labelTituloFun.BackColor = System.Drawing.Color.Transparent;
+            this.labelTituloFun.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelTituloFun.Location = new System.Drawing.Point(122, 50);
             this.labelTituloFun.Name = "labelTituloFun";
-            this.labelTituloFun.Size = new System.Drawing.Size(187, 21);
+            this.labelTituloFun.Size = new System.Drawing.Size(220, 25);
             this.labelTituloFun.TabIndex = 0;
             this.labelTituloFun.Text = "Cadastro de Funcionário";
             // 
             // labelNome
             // 
             this.labelNome.AutoSize = true;
+            this.labelNome.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelNome.Location = new System.Drawing.Point(56, 108);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(43, 15);
@@ -61,6 +64,7 @@ namespace KitSala
             // labelEmail
             // 
             this.labelEmail.AutoSize = true;
+            this.labelEmail.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelEmail.Location = new System.Drawing.Point(55, 150);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(44, 15);
@@ -70,6 +74,7 @@ namespace KitSala
             // labelChapa
             // 
             this.labelChapa.AutoSize = true;
+            this.labelChapa.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelChapa.Location = new System.Drawing.Point(55, 192);
             this.labelChapa.Name = "labelChapa";
             this.labelChapa.Size = new System.Drawing.Size(44, 15);
@@ -99,18 +104,22 @@ namespace KitSala
             // 
             // buttonSalvarFun
             // 
+            this.buttonSalvarFun.BackColor = System.Drawing.Color.SpringGreen;
+            this.buttonSalvarFun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSalvarFun.Location = new System.Drawing.Point(289, 192);
             this.buttonSalvarFun.Name = "buttonSalvarFun";
             this.buttonSalvarFun.Size = new System.Drawing.Size(84, 23);
             this.buttonSalvarFun.TabIndex = 7;
             this.buttonSalvarFun.Text = "Salvar";
-            this.buttonSalvarFun.UseVisualStyleBackColor = true;
+            this.buttonSalvarFun.UseVisualStyleBackColor = false;
             this.buttonSalvarFun.Click += new System.EventHandler(this.buttonSalvarFun_Click);
             // 
             // TelaFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(449, 294);
             this.Controls.Add(this.buttonSalvarFun);
             this.Controls.Add(this.textBoxChapa);
